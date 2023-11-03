@@ -11,8 +11,8 @@ File Contoh Unit Testing dan Whitebox Testing : my_unit_test.py
 ### Keterangan : 
 
 kita memiliki fungsi *tambah* yang menerima dua angka dan mengembalikan hasil penjumlahannya.<br>
-fungsi *test_tambah_string* sebagai contoh Whitebox Testing. Fungsi ini mencoba menjumlahkan string dan angka, yang seharusnya menimbulkan TypeError.<br>
-Dengan *with self.assertRaises(TypeError)*, kita memastikan bahwa operasi ini benar-benar memunculkan pengecualian TypeError.<br><br>
+fungsi *test_tambah_string* sebagai contoh Whitebox Testing. Fungsi ini mencoba menjumlahkan string dan angka, yang seharusnya menimbulkan TypeError.<br>
+Dengan *with self.assertRaises(TypeError)*, kita memastikan bahwa operasi ini benar-benar memunculkan pengecualian TypeError.<br><br>
 
 
 Dengan demikian, contoh ini mencakup Unit Testing (menguji fungsionalitas) dan Whitebox Testing (menguji kode internal) dalam Python.<br>
