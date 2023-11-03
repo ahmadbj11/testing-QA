@@ -1,0 +1,25 @@
+name: Python CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Kode
+      uses: actions/checkout@v2
+
+    - name: Set Up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Instal Dependensi
+      run: pip install -r requirements.txt
+
+    - name: Jalankan Pengujian Unit
+      run: python -m unittest my_unit_test.py
